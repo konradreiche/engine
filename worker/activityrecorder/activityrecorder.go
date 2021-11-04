@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"sync"
 
-	nsq "github.com/bitly/go-nsq"
+	nsq "github.com/nsqio/go-nsq"
 	"github.com/october93/engine/kit/log"
 	"github.com/october93/engine/model"
 	"github.com/october93/engine/store"

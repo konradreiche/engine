@@ -7,10 +7,10 @@ package rpc
 
 import (
 	"context"
+	"errors"
 
 	"github.com/october93/engine/kit/log"
 	rpccontext "github.com/october93/engine/rpc/context"
-	"github.com/pkg/errors"
 )
 
 type loggingMiddleware struct {

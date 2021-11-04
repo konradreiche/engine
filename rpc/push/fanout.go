@@ -3,7 +3,7 @@ package push
 import (
 	"context"
 
-	nats "github.com/nats-io/go-nats"
+	nats "github.com/nats-io/nats.go"
 	"github.com/october93/engine/kit/globalid"
 	"github.com/october93/engine/kit/log"
 	"github.com/october93/engine/rpc/protocol"

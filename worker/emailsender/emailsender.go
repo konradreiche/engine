@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	nsq "github.com/bitly/go-nsq"
+	nsq "github.com/nsqio/go-nsq"
 	"github.com/october93/engine/kit/log"
 	"github.com/october93/engine/worker"
 	sendgrid "github.com/sendgrid/sendgrid-go"
