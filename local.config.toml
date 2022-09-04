@@ -49,7 +49,7 @@ UseGraph = false
 [Server]
   Host = "localhost"
   Port = 9000
-  PublicPath = "public"
+  PublicPath = "data/assets"
   [Server.RPC]
   AdminPanelHost = "http://localhost:3200"
   WebEndpoint = "http://localhost:3000"

@@ -1,11 +1,13 @@
-FROM ubuntu
-MAINTAINER Konrad Reiche <konrad@october.news>
+FROM golang:1.18.0
 
-ENV PORT 9000
+RUN mkdir -p /go/src/engine
 
-COPY engine /
-COPY local.config.toml config.toml
-COPY database.yml /
-COPY worker/emailsender/templates worker/emailsender/templates
+WORKDIR /go/src/engine
 
-CMD ["/engine", "--config", "config.toml"]
+COPY . .
+
+RUN go mod download
+
+RUN go build -buildvcs=false
+
+CMD ["./engine", "--config", "local.config.toml"]
